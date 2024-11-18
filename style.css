@@ -1,0 +1,48 @@
+body{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 8fr 1fr 1fr 1fr;
+    grid-template-rows: 4fr 2fr 5fr 15fr 4fr;
+    grid-gap: 5px;
+    background-color: bisque;
+}
+
+.rubrik{
+    grid-column: 4/5;
+    grid-row: 1/2;
+}
+
+.sammanfattning{
+    grid-column: ;
+    grid-row: 3/6;
+}
+
+main{
+    display: flex;
+    flex-direction: ;
+    justify-content: ;
+    grid-column: 2/7;
+    grid-row: 4/5;
+    background-color: bisque;
+    border-color: black;
+}
+
+.ingridienser{
+    align-items: ;
+}
+
+.instruktioner{
+    align-items: ;
+}
+
+.rät_bild{
+    align-items: ;
+}
+
+footer{
+    grid-column: 4/5;
+    grid-row: 3/6;
+    text-emphasis-color: black;
+}
+
+
+
