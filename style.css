@@ -1,52 +1,62 @@
-body{
+body {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 8fr 1fr 1fr 1fr;
-    grid-template-rows: 4fr 5fr 15fr 4fr;
-    grid-gap: 5px;
-    background-color: white;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 2fr 4fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 50px 225px 1fr 4fr 1fr 50px;
+    grid-gap: 10px;
 }
 
-.rubrik{
-    grid-column: 3/6;
-    grid-row: 1/2;
-    align-items: center;
+.frame {
+    grid-column: 2/11;
+    grid-row: 1/7;
+    background-color: bisque;
 }
 
-.sammanfattning{
-    grid-column: 4/5;
+.rubrik {
+    grid-column: 4/9;
     grid-row: 2/3;
-    background-color: white;
-    border-color: black;
 }
 
-main{
+.sammanfattning {
+    grid-column: 5/8;
+    grid-row: 3/4;
+    border: 3px black solid;
+    background-color: white;
+}
+
+main {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    grid-column: 2/7;
-    grid-row: 3/4;
+    justify-content: space-around;
+    grid-column: 3/10;
+    grid-row: 4/5;
+    border: 3px black solid;
     background-color: white;
-    border-color: black;
 }
 
-.ingridienser{
-    align-items: flex-start;
-}
-
-.instruktioner{
-    align-items: center;
-}
-
-.rät_bild{
-    align-items: flex-end;
-}
-
-footer{
-    grid-column: 4/5;
+.ingridienser {
+    margin: 20px;
+    grid-column: 3/5;
     grid-row: 4/5;
     background-color: white;
-    border-color: black;
 }
 
+.instruktioner {
+    margin: 10px;
+    grid-column: 5/7;
+    grid-row: 4/5;
+    background-color: white;
+}
 
+.ratt_bild {
+    margin:10px;
+    width: 100%;
+    grid-column: 7/10;
+    grid-row: 4/5;
+}
 
+footer {
+    grid-column: 5/8;
+    grid-row: 5/6;
+    background-color: white;
+    border: 3px black solid;
+}
